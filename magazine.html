@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Magazine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Architect Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href='#css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+<!---- start-smoth-scrolling---->
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+			jQuery(document).ready(function($) {
+				$(".scroll").click(function(event){		
+					event.preventDefault();
+					$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+				});
+			});
+		</script>
+<!--start-smoth-scrolling-->
+</head>
+<body>
+	<!--header-->
+	<div class="header-top" id="home">
+		<div class="container">
+			<div class="header-logo">
+				<a href="index.html"><img src="images/logo.png" alt=""/></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"><img src="images/menu-icon.png" alt=""/></span>
+				<ul class="nav1">
+					<li><a href="index.html">网站首页 </a></li>
+					<li><a href="magazine.html">客户案例</a></li>
+					<li><a href="strange-buildings.html">特色环境</a></li>
+					<li><a href="blog.html">酒店介绍</a></li>
+					<li><a href="news.html">酒店资讯</a></li>
+				</ul>
+				<!-- script-for-menu -->
+				 <script>
+				   $( "span.menu" ).click(function() {
+					 $( "ul.nav1" ).slideToggle( 300, function() {
+					 // Animation complete.
+					  });
+					 });
+				</script>
+				<!-- /script-for-menu -->
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#"><span class="twit"> </span></a></li>
+					<li><a href="#"><span class="fb"> </span></a></li>
+					<li><a href="#"><span class="g"> </span></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="search-box">
+			<div id="sb-search" class="sb-search">
+				<form>
+					<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search" id="search">
+					<input class="sb-search-submit" type="submit" value="">
+					<span class="sb-icon-search"> </span>
+				</form>
+			</div>
+		</div>
+		<div class="header-info-right">
+				<div class="header cbp-spmenu-push">
+					<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+						<a href="index.html">网站首页</a>
+						<a href="magazine.html">客户案例</a>
+						<a href="strange-buildings.html">特色环境</a>
+						<a href="blog.html">酒店介绍</a>
+						<a href="news.html">酒店资讯</a>
+					</nav>
+					<!--script-nav -->	
+					<script>
+						$("span.menu").click(function(){
+							$("ul.navigatoin").slideToggle("300" , function(){
+							});
+						});
+					</script>
+					<script type="text/javascript">
+								jQuery(document).ready(function($) {
+									$(".scroll").click(function(event){		
+										event.preventDefault();
+										$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+									});
+								});
+					</script>
+					<div class="clearfix"> </div>
+						<!-- /script-nav -->
+									<div class="main">
+										<section class="buttonset">
+											<button id="showLeftPush"><img src="images/menu.png" /><span>菜单栏</span></button>
+										</section>
+									</div>
+									<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+									<script src="js/classie.js"></script>
+									<script>
+										var	menuLeft = document.getElementById( 'cbp-spmenu-s1' ),
+											showLeftPush = document.getElementById( 'showLeftPush' ),
+											body = document.body;
+							
+										showLeftPush.onclick = function() {
+				classie.toggle( this, 'active' );
+				classie.toggle( body, 'cbp-spmenu-push-toright' );
+				classie.toggle( menuLeft, 'cbp-spmenu-open' );
+				disableOther( 'showLeftPush' );
+			};
+									</script>
+				</div>
+			</div>
+	</div>
+	<!--//header-->
+	<!--search-scripts-->
+					<script src="js/classie.js"></script>
+					<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+	<!--//search-scripts-->
+	<!--magazine-->
+	<div class="magazine">
+		<div class="container">
+			<div class="magazine-top">
+				<div class="col-md-7 magazine-top-left">
+					<div  id="top" class="callbacks_container">
+			    		<ul class="rslides" id="slider4">
+				    		<li>
+								<img src="images/m-1.jpg" alt="" />
+							</li>
+							<li>
+								<img src="images/m-2.jpg" alt="" />
+							</li>
+							<li>
+								<img src="images/m-3.jpg" alt="" />
+							</li>
+							<li>
+								<img src="images/m-4.jpg" alt="" />
+							</li>
+							<li>
+								<img src="images/m-5.jpg" alt="" />
+							</li>
+			     		</ul>
+			 		</div>
+					<div class="clearfix"> </div>
+				</div>
+				<div class="col-md-5 magazine-top-right">
+					<div class="mag-top">
+						<div class="col-md-4 mag-top-left">
+							<a href="single.html"><img src="images/m-6.jpg" alt="" /></a>
+						</div>
+						<div class="col-md-8 mag-top-left">
+							<a href="single.html"><h4>会议及宴会设施</h4></a>
+							<p>
+								会议及宴会设施赛丽格拥有优异的会议接待设施，从大型宴会厅到精致的小型会议室，均配备现代齐全的会议设施；更有专业的会议管理团队为您提供温馨细致的服务。 </p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="mag-top">
+						<div class="col-md-4 mag-top-left">
+							<a href="single.html"><img src="images/m-8.jpg" alt="" /></a>
+						</div>
+						<div class="col-md-8 mag-top-left">
+							<a href="single.html"><h4>国际美食荟</h4></a>
+							<p>位于 大湾咖啡厅, 香港嘉里酒店, 香港特别行政区
+
+								大湾咖啡厅的资深烹饪团队精选品质上乘的本地与进口食材，为食客营造一场无与伦比的风味盛会。</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					<div class="mag-top">
+						<div class="col-md-4 mag-top-left">
+							<a href="single.html"><img src="images/m-9.jpg" alt="" /></a>
+						</div>
+						<div class="col-md-8 mag-top-left">
+							<a href="single.html"><h4> 夏日点心半价优惠</h4></a>
+							<p> 缤纷点心美味：午餐时段50%折扣，周末时段25%折扣
+
+								位于 醉月楼, 台南香格里拉远东国际大饭店, 台湾
+								
+								7月15日至8月31日，上海醉月楼为您准备了超过30款正宗粤式点心：您可以伴着令人心醉的景致</p>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+			<div class="magazine-bottom">
+					<div class="col-md-7 magazine-bottom-left">
+						<h3>从我们的故事中获取旅行灵感</h3>
+						<div class="mag-btm">
+							<div class="col-md-4 mag-btm-left">
+								<a href="single.html"><img src="images/m-10.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 mag-btm-left">
+								<a href="single.html"><h4>焕活之旅</h4></a>
+								<p>在获得重大升迁后，莎拉决定趁此机会呵护一下长期以来被忽略的身体，于是她在悉尼瑞士酒店安排了一个养生周末，做为给自己的犒赏。
+								</p>
+								<div class="m-btn">
+									<a href="single.html" class="hvr-shutter-out-horizontal">了解详情</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="mag-btm">
+							<div class="col-md-4 mag-btm-left">
+								<a href="single.html"><img src="images/m-11.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 mag-btm-left">
+								<a href="single.html"><h4>皇后镇家庭度假</h4></a>
+								<p>大卫和安妮带着两个精力旺盛的儿子前往皇后镇展开探险之旅，希望能够让孩子们玩个痛快，并增进家人之间的感情。</p>
+								<div class="m-btn">
+									<a href="single.html" class="hvr-shutter-out-horizontal">了解详情</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="mag-btm">
+							<div class="col-md-4 mag-btm-left">
+								<a href="single.html"><img src="images/m-12.jpg" alt="" /></a>
+							</div>
+							<div class="col-md-8 mag-btm-left">
+								<a href="single.html"><h4>海边度假，水疗休养</h4></a>
+								<p>想要换个环境转换心情的娜塔莉给自己安排了独自一人的道格拉斯港水疗之旅，也趁机前往心仪已久的大堡礁一游。</p>
+								<div class="m-btn">
+									<a href="single.html" class="hvr-shutter-out-horizontal">了解详情</a>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="col-md-5 magazine-bottom-left">
+						<h3>为什么选择我们</h3>
+						<div class="latest">
+							<div class="col-md-1 latest-left">
+								<h4>1</h4>
+							</div>
+							<div class="col-md-11 latest-left">
+								<h5>发现赛丽格</h5>
+								<p>精品酒店起源于北美
+									以其私密、精致的酒店环境</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="latest">
+							<div class="col-md-1 latest-left">
+								<h4>2</h4>
+							</div>
+							<div class="col-md-11 latest-left">
+								<h5>发现赛丽格的价值点</h5>
+								<p>精品酒店起源于北美
+									以其私密、精致的酒店环境</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="latest">
+							<div class="col-md-1 latest-left">
+								<h4>3</h4>
+							</div>
+							<div class="col-md-11 latest-left">
+								<h5>赛丽格品牌优势</h5>
+								<p>23年专注中端酒店的先
+									发优势经验与智慧积累
+									</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--magazine-->
+	<!--Slider-Starts-Here-->
+				<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: false,
+			        nav: false,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!--End-slider-script-->
+	<!--read-->
+	<div class="read">
+		<div class="container">
+			<div class="read-main">
+				<div class="col-md-5 read-left">
+					<h3>预订中心</h3>
+					<div class="read-btm">
+						<div class="col-md-4 rd-left">
+							<ul>
+								<li><a href="index.html">查找或预定</a></li>
+								<li><a href="#">我们的目的地</a></li>
+								<li><a href="#">查找预定</a></li>
+								<li><a href="#">会议与宴会</a></li>
+								<li><a href="#">餐厅与酒吧</a></li>								
+							</ul>
+						</div>
+						<div class="col-md-4 rd-left">
+							<ul>
+								<li><a href="#">贵宾金环会</a></li>
+								<li><a href="#">会员计划概述</a></li>
+								<li><a href="#">加入贵宾金环会</a></li>
+								<li><a href="#">我的账户</a></li>
+								<li><a href="#">尚桌计划</a></li>
+								<li><a href="#">常见问题</a></li>
+								<li><a href="#">赛丽格集团</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 rd-left">
+							<ul>
+								<li><a href="#">关于赛丽格</a></li>
+								<li><a href="#">关于我们</a></li>
+								<li><a href="#">我们的酒店品牌</a></li>
+								<li><a href="#">赛丽格中心</a></li>
+								<li><a href="#">赛丽格公寓</a></li>
+								<li><a href="#">联系我们</a></li>
+
+								
+							</ul>
+						</div>
+						
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-md-5 read-left">
+					<h3>客户评论</h3>
+					<div class="read-btm">
+						<div class="read-one">
+							<div class="col-md-3 read-bottom-left">
+								<img src="images/read-1.jpg" alt="" />
+							</div>
+							<div class="col-md-9 read-bottom-right">
+								<h4>#性价比高##服务很好#房间装修风格很喜欢，很有质感，整体步调一致，不错的体验</h4>
+								<p> 7-14-2019发表</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="read-one">
+							<div class="col-md-3 read-bottom-left">
+								<img src="images/read-1.jpg" alt="" />
+							</div>
+							<div class="col-md-9 read-bottom-right">
+								<h4>#卫生好##性价比高##房间高大上##位置繁华#，无限会去入住的房间，非常棒</h4>
+								<p>7-18-2019发表</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 read-left">
+					<h3>联系方式</h3>
+					<div class="read-btm follow">
+						<ul>
+							<li><a href="#" class="twit">423.3k Followers</a></li>
+							<li><a href="#" class="fb">6.8m Likes</a></li>
+							<li><a href="#" class="d">423k Followers</a></li>
+							<li><a href="#" class="p">423k Followers</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--read-->
+	<!--footer-->
+	<div class="footer">
+		<div class="col-md-6 footer-left">
+			<p>© 2020 赛丽格酒店管理有限公司 保留所有权利 沪ICP备18888888号
+				<a href="">隐私政策</a>
+				<a href="">条款与细则</a>
+				<a href="">人身财产安全</a>
+				<a href="">供应商行为守则</a>
+			</p>
+		</div>
+		<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	</div>
+	<!--footer-->
+</body>
+</html>

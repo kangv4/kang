@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Home</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="Architect Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+	<script
+		type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+	<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<script src="js/jquery-1.11.0.min.js"></script>
+	<link href='#css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+		rel='stylesheet' type='text/css'>
+	<!---- start-smoth-scrolling---->
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!--start-smoth-scrolling-->
+</head>
+
+<body>
+	<!--header-->
+	<div class="header-top" id="home">
+		<div class="container">
+			<div class="header-logo">
+				<a href="index.html"><img src="images/logo.png" alt="" /></a>
+			</div>
+			<div class="top-nav">
+				<span class="menu"><img src="images/menu-icon.png" alt="" /></span>
+				<ul class="nav1">
+					<li><a href="index.html">网站首页 </a></li>
+					<li><a href="magazine.html">客户案例</a></li>
+					<li><a href="strange-buildings.html">特色环境</a></li>
+					<li><a href="blog.html">酒店介绍</a></li>
+					<li><a href="news.html">酒店资讯</a></li>
+				</ul>
+				<!-- script-for-menu -->
+				<script>
+					$("span.menu").click(function () {
+						$("ul.nav1").slideToggle(300, function () {
+							// Animation complete.
+						});
+					});
+				</script>
+				<!-- /script-for-menu -->
+			</div>
+			<div class="social-icons">
+				<ul>
+					<li><a href="#"><span class="twit"> </span></a></li>
+					<li><a href="#"><span class="fb"> </span></a></li>
+					<li><a href="#"><span class="g"> </span></a></li>
+				</ul>
+			</div>
+			<div class="clearfix"> </div>
+		</div>
+		<div class="search-box">
+			<div id="sb-search" class="sb-search">
+				<form>
+					<input class="sb-search-input" placeholder="Enter your search term..." type="search" name="search"
+						id="search">
+					<input class="sb-search-submit" type="submit" value="">
+					<span class="sb-icon-search"> </span>
+				</form>
+			</div>
+		</div>
+		<div class="header-info-right">
+			<div class="header cbp-spmenu-push">
+				<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left" id="cbp-spmenu-s1">
+					<a href="index.html">网站首页</a>
+					<a href="magazine.html">客户案例</a>
+					<a href="strange-buildings.html">特色环境</a>
+					<a href="blog.html">酒店介绍</a>
+					<a href="news.html">酒店资讯</a>
+				</nav>
+				<!--script-nav -->
+				<script>
+					$("span.menu").click(function () {
+						$("ul.navigatoin").slideToggle("300", function () {
+						});
+					});
+				</script>
+				<script type="text/javascript">
+					jQuery(document).ready(function ($) {
+						$(".scroll").click(function (event) {
+							event.preventDefault();
+							$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+						});
+					});
+				</script>
+				<div class="clearfix"> </div>
+				<!-- /script-nav -->
+				<div class="main">
+					<section class="buttonset">
+						<button id="showLeftPush"><img src="images/menu.png" /><span>菜单栏</span></button>
+					</section>
+				</div>
+				<!-- Classie - class helper functions by @desandro https://github.com/desandro/classie -->
+				<script src="js/classie.js"></script>
+				<script>
+					var menuLeft = document.getElementById('cbp-spmenu-s1'),
+						showLeftPush = document.getElementById('showLeftPush'),
+						body = document.body;
+
+					showLeftPush.onclick = function () {
+						classie.toggle(this, 'active');
+						classie.toggle(body, 'cbp-spmenu-push-toright');
+						classie.toggle(menuLeft, 'cbp-spmenu-open');
+						disableOther('showLeftPush');
+					};
+				</script>
+			</div>
+		</div>
+	</div>
+	<!--//header-->
+	<!--search-scripts-->
+	<script src="js/classie.js"></script>
+	<script src="js/uisearch.js"></script>
+	<script>
+		new UISearch(document.getElementById('sb-search'));
+	</script>
+	<!--//search-scripts-->
+	<!--banner-->
+	<div class="banner">
+		<div class="container">
+			<div class="banner-top">
+				<h1>品质源于专业 · 诚信铸就辉煌</h1>
+				<ul>
+					<li><a class="sub" href="#">了解更多</a></li>
+					<li><a class="art" href="#">立即预约</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--banner-->
+	<!--slide-->
+	<div class="gallery-cursual">
+		<!-- requried-jsfiles-for owl -->
+		<link href="css/owl.carousel.css" rel="stylesheet">
+		<script>
+			$(document).ready(function () {
+				$("#owl-demo").owlCarousel({
+					items: 5,
+					lazyLoad: true,
+					autoPlay: true,
+					pagination: false,
+				});
+			});
+		</script>
+		<!-- //requried-jsfiles-for owl -->
+		<!-- start content_slider -->
+		<div id="owl-demo" class="owl-carousel text-center">
+			<div class="item g1 popup-with-zoom-anim" href="#small-dialog">
+				<img class="lazyOwl" data-src="images/slide-1.jpg" alt="name">
+				<div class="caption">
+					<h3>打造一价即享的住玩趣味新体验！</h3>
+					<div class="s-btn">
+						<a href="#">了解更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim" href="#small-dialog1">
+				<img class="lazyOwl" data-src="images/slide-2.jpg" alt="name">
+				<div class="caption">
+					<h3>打造一价即享的住玩趣味新体验！</h3>
+					<div class="s-btn">
+						<a href="#">了解更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim" href="#small-dialog2">
+				<img class="lazyOwl" data-src="images/slide-3.jpg" alt="name">
+				<div class="caption">
+					<h3>打造一价即享的住玩趣味新体验！</h3>
+					<div class="s-btn">
+						<a href="#">了解更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim" href="#small-dialog3">
+				<img class="lazyOwl" data-src="images/slide-4.jpg" alt="name">
+				<div class="caption">
+					<h3>打造一价即享的住玩趣味新体验！</h3>
+					<div class="s-btn">
+						<a href="#">了解更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim" href="#small-dialog4">
+				<img class="lazyOwl" data-src="images/slide-5.jpg" alt="name">
+				<div class="caption">
+					<h3>打造一价即享的住玩趣味新体验！</h3>
+					<div class="s-btn">
+						<a href="#">了解更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim" href="#small-dialog5">
+				<img class="lazyOwl" data-src="images/slide-6.jpg" alt="name">
+				<div class="caption">
+					<h3>打造一价即享的住玩趣味新体验！</h3>
+					<div class="s-btn">
+						<a href="#">了解更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim" href="#small-dialog6">
+				<img class="lazyOwl" data-src="images/slide-7.jpg" alt="name">
+				<div class="caption">
+					<h3>打造一价即享的住玩趣味新体验！</h3>
+					<div class="s-btn">
+						<a href="#">了解更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim" href="#small-dialog">
+				<img class="lazyOwl" data-src="images/slide-1.jpg" alt="name">
+				<div class="caption">
+					<h3>打造一价即享的住玩趣味新体验！</h3>
+					<div class="s-btn">
+						<a href="#">了解更多</a>
+					</div>
+				</div>
+			</div>
+			<div class="item g1 popup-with-zoom-anim" href="#small-dialog">
+				<img class="lazyOwl" data-src="images/slide-2.jpg" alt="name">
+				<div class="caption">
+					<h3>打造一价即享的住玩趣味新体验！</h3>
+					<div class="s-btn">
+						<a href="#">了解更多</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//sreen-gallery-cursual---->
+		<!-- caption-popup -->
+		<div class="caption-popup">
+			<div id="small-dialog" class="mfp-hide innercontent">
+				<h4>客房說明</h4>
+				<img class="img-responsive cap" src="images/slide-1.jpg" title="postname" />
+				<p>房间有电视➕投影仪哦 可以躺在床上看投影～
+					概房源同等配置的有多套，先预定的可优先安排选择，但是不保证一定能安排到最喜欢的～会尽量满足优先预定的需求哦，可以详细咨询房东安排～
+					房屋坐落于成都市中心春熙路九眼桥商圈，高空俯瞰湖中景，远处眺看蜀锦城。春熙路太古里车程五分钟可达，近川大川音校区，九眼桥兰桂坊步行可达，交通便利，距离地铁仅300米。成都大多数景点20分钟可达。
+				</p>
+				<a class="morebtn" href="#">查看介绍</a>
+			</div>
+		</div>
+		<div class="caption-popup">
+			<div id="small-dialog1" class="mfp-hide innercontent">
+				<h4>客房說明</h4>
+				<img class="img-responsive cap" src="images/slide-2.jpg" title="postname" />
+				<p>房间有电视➕投影仪哦 可以躺在床上看投影～
+					概房源同等配置的有多套，先预定的可优先安排选择，但是不保证一定能安排到最喜欢的～会尽量满足优先预定的需求哦，可以详细咨询房东安排～
+					房屋坐落于成都市中心春熙路九眼桥商圈，高空俯瞰湖中景，远处眺看蜀锦城。春熙路太古里车程五分钟可达，近川大川音校区，九眼桥兰桂坊步行可达，交通便利，距离地铁仅300米。成都大多数景点20分钟可达。
+				</p>
+				<a class="morebtn" href="#">查看介绍</a>
+			</div>
+		</div>
+		<div class="caption-popup">
+			<div id="small-dialog2" class="mfp-hide innercontent">
+				<h4>客房說明</h4>
+				<img class="img-responsive cap" src="images/slide-3.jpg" title="postname" />
+				<p>房间有电视➕投影仪哦 可以躺在床上看投影～
+					概房源同等配置的有多套，先预定的可优先安排选择，但是不保证一定能安排到最喜欢的～会尽量满足优先预定的需求哦，可以详细咨询房东安排～
+					房屋坐落于成都市中心春熙路九眼桥商圈，高空俯瞰湖中景，远处眺看蜀锦城。春熙路太古里车程五分钟可达，近川大川音校区，九眼桥兰桂坊步行可达，交通便利，距离地铁仅300米。成都大多数景点20分钟可达。
+				</p>
+				<a class="morebtn" href="#">查看介绍</a>
+			</div>
+		</div>
+		<div class="caption-popup">
+			<div id="small-dialog3" class="mfp-hide innercontent">
+				<h4>客房說明</h4>
+				<img class="img-responsive cap" src="images/slide-4.jpg" title="postname" />
+				<p>房间有电视➕投影仪哦 可以躺在床上看投影～
+					概房源同等配置的有多套，先预定的可优先安排选择，但是不保证一定能安排到最喜欢的～会尽量满足优先预定的需求哦，可以详细咨询房东安排～
+					房屋坐落于成都市中心春熙路九眼桥商圈，高空俯瞰湖中景，远处眺看蜀锦城。春熙路太古里车程五分钟可达，近川大川音校区，九眼桥兰桂坊步行可达，交通便利，距离地铁仅300米。成都大多数景点20分钟可达。
+				</p>
+				<a class="morebtn" href="#">查看介绍</a>
+			</div>
+		</div>
+		<div class="caption-popup">
+			<div id="small-dialog3" class="mfp-hide innercontent">
+				<h4>客房說明</h4>
+				<img class="img-responsive cap" src="images/slide-4.jpg" title="postname" />
+				<p>房间有电视➕投影仪哦 可以躺在床上看投影～
+					概房源同等配置的有多套，先预定的可优先安排选择，但是不保证一定能安排到最喜欢的～会尽量满足优先预定的需求哦，可以详细咨询房东安排～
+					房屋坐落于成都市中心春熙路九眼桥商圈，高空俯瞰湖中景，远处眺看蜀锦城。春熙路太古里车程五分钟可达，近川大川音校区，九眼桥兰桂坊步行可达，交通便利，距离地铁仅300米。成都大多数景点20分钟可达。
+				</p>
+				<a class="morebtn" href="#">查看介绍</a>
+			</div>
+		</div>
+		<div class="caption-popup">
+			<div id="small-dialog3" class="mfp-hide innercontent">
+				<h4>客房說明</h4>
+				<img class="img-responsive cap" src="images/slide-4.jpg" title="postname" />
+				<p>房间有电视➕投影仪哦 可以躺在床上看投影～
+					概房源同等配置的有多套，先预定的可优先安排选择，但是不保证一定能安排到最喜欢的～会尽量满足优先预定的需求哦，可以详细咨询房东安排～
+					房屋坐落于成都市中心春熙路九眼桥商圈，高空俯瞰湖中景，远处眺看蜀锦城。春熙路太古里车程五分钟可达，近川大川音校区，九眼桥兰桂坊步行可达，交通便利，距离地铁仅300米。成都大多数景点20分钟可达。
+				</p>
+				<a class="morebtn" href="#">查看介绍</a>
+			</div>
+		</div>
+		<div class="caption-popup">
+			<div id="small-dialog3" class="mfp-hide innercontent">
+				<h4>客房說明</h4>
+				<img class="img-responsive cap" src="images/slide-4.jpg" title="postname" />
+				<p>房间有电视➕投影仪哦 可以躺在床上看投影～
+					概房源同等配置的有多套，先预定的可优先安排选择，但是不保证一定能安排到最喜欢的～会尽量满足优先预定的需求哦，可以详细咨询房东安排～
+					房屋坐落于成都市中心春熙路九眼桥商圈，高空俯瞰湖中景，远处眺看蜀锦城。春熙路太古里车程五分钟可达，近川大川音校区，九眼桥兰桂坊步行可达，交通便利，距离地铁仅300米。成都大多数景点20分钟可达。
+				</p>
+				<a class="morebtn" href="#">查看介绍</a>
+			</div>
+		</div>
+		<!----//fea-video---->
+		<script>
+			$(document).ready(function () {
+				$('.popup-with-zoom-anim').magnificPopup({
+					type: 'inline',
+					fixedContentPos: false,
+					fixedBgPos: true,
+					overflowY: 'auto',
+					closeBtnInside: true,
+					preloader: false,
+					midClick: true,
+					removalDelay: 300,
+					mainClass: 'my-mfp-zoom-in'
+				});
+
+			});
+		</script>
+	</div>
+	<!-- /caption-popup -->
+	<!---pop-up-box---->
+	<link href="css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js"></script>
+	<!---//pop-up-box---->
+	<!--slide-->
+	<!--address-->
+	<div class="address">
+		<div class="container">
+			<div class="address-top">
+				<p>特别推荐房型</p>
+			</div>
+		</div>
+	</div>
+	<!--address-->
+	<!--articles-->
+	<div class="articles">
+		<div class="container">
+			<div class="articles-top">
+				<div class="col-md-4 articles-left">
+					<div class="art-one">
+						<a href="single.html"><img src="images/art-1.jpg" alt="" /></a>
+						<div class="art-btm">
+							<a href="single.html">
+								<h3>豪华商务阳光套房</h3>
+							</a>
+							<p>原木墙壁和大理石地板，烘托唯我独尊的霸气。落
+
+								地大玻璃窗，将室内和室外的空间连为一体，低头
+
+								俯视即是高贵雪虎生活的动物岛</p>
+							<ul>
+								<li><a href="#"><span class="fb"> </span></a><label>21</label></li>
+								<li><a href="#"><span class="twit"> </span></a><label>12</label></li>
+								<li><a href="#"><span class="g"> </span></a><label>37</label></li>
+								<li><a href="#"><span class="p"> </span></a><label>22</label></li>
+							</ul>
+						</div>
+					</div>
+					<div class="art-one sponser">
+						<a href="single.html"><img src="images/art-3.jpg" alt="" /></a>
+						<div class="art-btm">
+							<a href="single.html">
+								<h3>中式豪华双人套房</h3>
+							</a>
+							<p>原木墙壁和大理石地板，烘托唯我独尊的霸气。落
+
+								地大玻璃窗，将室内和室外的空间连为一体，低头
+
+								俯视即是高贵雪虎生活的动物岛</p>
+							<ul>
+								<li><a href="#"><span class="fb"> </span></a><label>21</label></li>
+								<li><a href="#"><span class="twit"> </span></a><label>12</label></li>
+								<li><a href="#"><span class="g"> </span></a><label>37</label></li>
+								<li><a href="#"><span class="p"> </span></a><label>22</label></li>
+							</ul>
+							<h6>Sponsered</h6>
+						</div>
+					</div>
+					<div class="art-one">
+						<a href="single.html"><img src="images/art-5.jpg" alt="" /></a>
+						<div class="art-btm">
+							<a href="single.html">
+								<h3>岳阳铂尔曼套房</h3>
+							</a>
+							<p>依绵延群山，拥碧海银沙，三亚理文索菲特度假酒店位于充满时尚魅力的海棠湾国家海岸一线位置,完美融汇法式优雅和三亚海岛风情，带您领略法国里维埃拉式的迷人假期。</p>
+							<ul>
+								<li><a href="#"><span class="fb"> </span></a><label>21</label></li>
+								<li><a href="#"><span class="twit"> </span></a><label>12</label></li>
+								<li><a href="#"><span class="g"> </span></a><label>37</label></li>
+								<li><a href="#"><span class="p"> </span></a><label>22</label></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 articles-left">
+					<div class="art-one">
+						<a href="single.html"><img src="images/art-2.jpg" alt="" /></a>
+						<div class="art-btm">
+							<a href="single.html">
+								<h3>鹏瑞莱佛士套房</h3>
+							</a>
+							<p>精致的图腾纹样地毯铺设全房，超大
+
+								落地玻璃窗采光通透。墙身挂画凸显
+
+								自然生态气质，藤制木柜散发原始的
+
+								浪漫情怀。</p>
+							<ul>
+								<li><a href="#"><span class="fb"> </span></a><label>21</label></li>
+								<li><a href="#"><span class="twit"> </span></a><label>12</label></li>
+								<li><a href="#"><span class="g"> </span></a><label>37</label></li>
+								<li><a href="#"><span class="p"> </span></a><label>22</label></li>
+							</ul>
+						</div>
+					</div>
+					<div class="art-one">
+						<a href="single.html"><img src="images/art-4.jpg" alt="" /></a>
+						<div class="art-btm">
+							<a href="single.html">
+								<h3>行政豪华客房</h3>
+							</a>
+							<p>造访莱佛士，何不在深圳体验一番?在这个百年品牌的都市谧境中，感受深湾天际的优雅与格调。入住豪华客房，将深圳湾旖旎美景尽收眼底；云端各式精致美馔，让您于湾区腹地体验新高度
+
+							</p>
+							<ul>
+								<li><a href="#"><span class="fb"> </span></a><label>21</label></li>
+								<li><a href="#"><span class="twit"> </span></a><label>12</label></li>
+								<li><a href="#"><span class="g"> </span></a><label>37</label></li>
+								<li><a href="#"><span class="p"> </span></a><label>22</label></li>
+							</ul>
+						</div>
+					</div>
+					<div class="art-one">
+						<a href="single.html"><img src="images/art-1.jpg" alt="" /></a>
+						<div class="art-btm">
+							<a href="single.html">
+								<h3>套房</h3>
+							</a>
+							<p>成都赛丽格酒店欢迎您莅临体验世界一流的奢华优雅住宿体验。我们提供的诸多奢华设施充分考虑到了客人的舒适，可利用我们的超柔软 400
+								纱支床单和柔软舒适的羽绒被体验温馨舒适的酣畅睡眠。</p>
+							<ul>
+								<li><a href="#"><span class="fb"> </span></a><label>21</label></li>
+								<li><a href="#"><span class="twit"> </span></a><label>12</label></li>
+								<li><a href="#"><span class="g"> </span></a><label>37</label></li>
+								<li><a href="#"><span class="p"> </span></a><label>22</label></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 articles-left">
+					<h4>酒店环境</h4>
+					<div class="week">
+						<div class="col-md-6 week-left">
+							<div class="portfolio app mix_all" data-cat="app"
+								style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/week-1.jpg" class="b-link-stripe b-animate-go   swipebox"
+										title="Image Title">
+										<img src="images/week-1.jpg" />
+										<div class="b-wrapper">
+											<h2 class="b-animate b-from-left    b-delay03 ">
+												<span></span>
+											</h2>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6 week-left">
+							<div class="portfolio app mix_all" data-cat="app"
+								style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/week-2.jpg" class="b-link-stripe b-animate-go   swipebox"
+										title="Image Title">
+										<img src="images/week-2.jpg" />
+										<div class="b-wrapper">
+											<h2 class="b-animate b-from-left    b-delay03 ">
+												<span></span>
+											</h2>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="week-btm">
+							<div class="col-md-4 week-btm-left">
+								<div class="portfolio app mix_all" data-cat="app"
+									style="display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">
+										<a href="images/week-3.jpg" class="b-link-stripe b-animate-go   swipebox"
+											title="Image Title">
+											<img src="images/week-3.jpg" />
+											<div class="b-wrapper">
+												<h2 class="b-animate b-from-left    b-delay03 ">
+													<span class="one"></span>
+												</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 week-btm-left">
+								<div class="portfolio app mix_all" data-cat="app"
+									style="display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">
+										<a href="images/week-4.jpg" class="b-link-stripe b-animate-go   swipebox"
+											title="Image Title">
+											<img src="images/week-4.jpg" />
+											<div class="b-wrapper">
+												<h2 class="b-animate b-from-left    b-delay03 ">
+													<span class="one"></span>
+												</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 week-btm-left">
+								<div class="portfolio app mix_all" data-cat="app"
+									style="display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">
+										<a href="images/week-5.jpg" class="b-link-stripe b-animate-go   swipebox"
+											title="Image Title">
+											<img src="images/week-5.jpg" />
+											<div class="b-wrapper">
+												<h2 class="b-animate b-from-left    b-delay03 ">
+													<span class="one"></span>
+												</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="week-btm">
+							<div class="col-md-4 week-btm-left">
+								<div class="portfolio app mix_all" data-cat="app"
+									style="display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">
+										<a href="images/week-6.jpg" class="b-link-stripe b-animate-go   swipebox"
+											title="Image Title">
+											<img src="images/week-6.jpg" />
+											<div class="b-wrapper">
+												<h2 class="b-animate b-from-left    b-delay03 ">
+													<span class="one"></span>
+												</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 week-btm-left">
+								<div class="portfolio app mix_all" data-cat="app"
+									style="display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">
+										<a href="images/week-7.jpg" class="b-link-stripe b-animate-go   swipebox"
+											title="Image Title">
+											<img src="images/week-7.jpg" />
+											<div class="b-wrapper">
+												<h2 class="b-animate b-from-left    b-delay03 ">
+													<span class="one"></span>
+												</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 week-btm-left">
+								<div class="portfolio app mix_all" data-cat="app"
+									style="display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">
+										<a href="images/week-8.jpg" class="b-link-stripe b-animate-go   swipebox"
+											title="Image Title">
+											<img src="images/week-8.jpg" />
+											<div class="b-wrapper">
+												<h2 class="b-animate b-from-left    b-delay03 ">
+													<span class="one"></span>
+												</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="week-btm">
+							<div class="col-md-4 week-btm-left">
+								<div class="portfolio app mix_all" data-cat="app"
+									style="display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">
+										<a href="images/week-9.jpg" class="b-link-stripe b-animate-go   swipebox"
+											title="Image Title">
+											<img src="images/week-9.jpg" />
+											<div class="b-wrapper">
+												<h2 class="b-animate b-from-left    b-delay03 ">
+													<span class="one"></span>
+												</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 week-btm-left">
+								<div class="portfolio app mix_all" data-cat="app"
+									style="display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">
+										<a href="images/week-10.jpg" class="b-link-stripe b-animate-go   swipebox"
+											title="Image Title">
+											<img src="images/week-10.jpg" />
+											<div class="b-wrapper">
+												<h2 class="b-animate b-from-left    b-delay03 ">
+													<span class="one"></span>
+												</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 week-btm-left">
+								<div class="portfolio app mix_all" data-cat="app"
+									style="display: inline-block; opacity: 1;">
+									<div class="portfolio-wrapper">
+										<a href="images/week-11.jpg" class="b-link-stripe b-animate-go   swipebox"
+											title="Image Title">
+											<img src="images/week-11.jpg" />
+											<div class="b-wrapper">
+												<h2 class="b-animate b-from-left    b-delay03 ">
+													<span class="one"></span>
+												</h2>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="art-one">
+							<a href="single.html"><img src="images/week-12.jpg" alt="" /></a>
+							<div class="art-btm">
+								<a href="single.html">
+									<h3>佛山罗浮宫索菲特套房</h3>
+								</a>
+								<p>下榻赛丽格酒店，舒适体验豪华客房现代风格，惬意午后悠享乐吧当季网红下午茶，美好的悠闲时光，心悦之旅由此开启。</p>
+								<ul>
+									<li><a href="#"><span class="fb"> </span></a><label>21</label></li>
+									<li><a href="#"><span class="twit"> </span></a><label>12</label></li>
+									<li><a href="#"><span class="g"> </span></a><label>37</label></li>
+									<li><a href="#"><span class="p"> </span></a><label>22</label></li>
+								</ul>
+							</div>
+						</div>
+						<div class="art-one">
+							<a href="single.html"><img src="images/week-13.jpg" alt="" /></a>
+							<div class="art-btm">
+								<a href="single.html">
+									<h3>泰禾铂尔曼</h3>
+								</a>
+								<p>背倚连绵的鼓岭山脉，毗邻具有浓郁福州特色的5A级旅游景区——三坊七巷，将历史文化特色与周边的繁华商圈完美衔接。酒店拥有258间豪华客房及套房，</p>
+								<ul>
+									<li><a href="#"><span class="fb"> </span></a><label>21</label></li>
+									<li><a href="#"><span class="twit"> </span></a><label>12</label></li>
+									<li><a href="#"><span class="g"> </span></a><label>37</label></li>
+									<li><a href="#"><span class="p"> </span></a><label>22</label></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="clearfix"></div>
+				<div class="load">
+					<a href="#" class="hvr-shutter-out-horizontal">更多详情</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--articles-->
+	<link rel="stylesheet" href="css/swipebox.css">
+	<script src="js/jquery.swipebox.min.js"></script>
+	<script type="text/javascript">
+		jQuery(function ($) {
+			$(".swipebox").swipebox();
+		});
+	</script>
+	<!-- Portfolio Ends Here -->
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+
+			var filterList = {
+
+				init: function () {
+
+					// MixItUp plugin
+					// http://mixitup.io
+					$('#portfoliolist').mixitup({
+						targetSelector: '.portfolio',
+						filterSelector: '.filter',
+						effects: ['fade'],
+						easing: 'snap',
+						// call the hover effect
+						onMixEnd: filterList.hoverEffect()
+					});
+
+				},
+
+				hoverEffect: function () {
+
+					// Simple parallax effect
+					$('#portfoliolist .portfolio').hover(
+						function () {
+							$(this).find('.label').stop().animate({ bottom: 0 }, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({ top: -30 }, 500, 'easeOutQuad');
+						},
+						function () {
+							$(this).find('.label').stop().animate({ bottom: -40 }, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({ top: 0 }, 300, 'easeOutQuad');
+						}
+					);
+
+				}
+
+			};
+
+			// Run the show!
+			filterList.init();
+
+		});	
+	</script>
+	<!--advertisement-->
+	<div class="add">
+		<div class="container">
+			<div class="add-top">
+				<div class="col-md-10 add-left">
+					<p>加入我们</p>
+				</div>
+				<div class="col-md-2 add-right">
+					<img src="images/add.png" alt="" />
+					<h3>Advertisement</h3>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--advertisement-->
+	<!--read-->
+	<div class="read">
+		<div class="container">
+			<div class="read-main">
+				<div class="col-md-5 read-left">
+					<h3>预订中心</h3>
+					<div class="read-btm">
+						<div class="col-md-4 rd-left">
+							<ul>
+								<li><a href="index.html">查找或预定</a></li>
+								<li><a href="#">我们的目的地</a></li>
+								<li><a href="#">查找预定</a></li>
+								<li><a href="#">会议与宴会</a></li>
+								<li><a href="#">餐厅与酒吧</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 rd-left">
+							<ul>
+								<li><a href="#">贵宾金环会</a></li>
+								<li><a href="#">会员计划概述</a></li>
+								<li><a href="#">加入贵宾金环会</a></li>
+								<li><a href="#">我的账户</a></li>
+								<li><a href="#">尚桌计划</a></li>
+								<li><a href="#">常见问题</a></li>
+								<li><a href="#">赛丽格集团</a></li>
+							</ul>
+						</div>
+						<div class="col-md-4 rd-left">
+							<ul>
+								<li><a href="#">关于赛丽格</a></li>
+								<li><a href="#">关于我们</a></li>
+								<li><a href="#">我们的酒店品牌</a></li>
+								<li><a href="#">赛丽格中心</a></li>
+								<li><a href="#">赛丽格公寓</a></li>
+								<li><a href="#">联系我们</a></li>
+
+
+							</ul>
+						</div>
+
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="col-md-5 read-left">
+					<h3>客户评论</h3>
+					<div class="read-btm">
+						<div class="read-one">
+							<div class="col-md-3 read-bottom-left">
+								<img src="images/read-1.jpg" alt="" />
+							</div>
+							<div class="col-md-9 read-bottom-right">
+								<h4>#性价比高##服务很好#房间装修风格很喜欢，很有质感，整体步调一致，不错的体验</h4>
+								<p> 7-14-2019发表</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="read-one">
+							<div class="col-md-3 read-bottom-left">
+								<img src="images/read-1.jpg" alt="" />
+							</div>
+							<div class="col-md-9 read-bottom-right">
+								<h4>#卫生好##性价比高##房间高大上##位置繁华#，无限会去入住的房间，非常棒</h4>
+								<p>7-18-2019发表</p>
+							</div>
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 read-left">
+					<h3>联系方式</h3>
+					<div class="read-btm follow">
+						<ul>
+							<li><a href="#" class="twit">423.3k Followers</a></li>
+							<li><a href="#" class="fb">6.8m Likes</a></li>
+							<li><a href="#" class="d">423k Followers</a></li>
+							<li><a href="#" class="p">423k Followers</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!--read-->
+	<!--footer-->
+	<div class="footer">
+		<div class="col-md-6 footer-left">
+			<p>© 2020 赛丽格酒店管理有限公司 保留所有权利 沪ICP备18888888号
+				<a href="">隐私政策</a>
+				<a href="">条款与细则</a>
+				<a href="">人身财产安全</a>
+				<a href="">供应商行为守则</a>
+			</p>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function () {
+
+
+				$().UItoTop({ easingType: 'easeOutQuart' });
+
+			});
+		</script>
+		<a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover" style="opacity: 1;">
+			</span></a>
+	</div>
+	<!--footer-->
+</body>
+
+</html>
